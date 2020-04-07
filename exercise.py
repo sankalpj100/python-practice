@@ -31,4 +31,13 @@ def largest_smallest(x):
     for j in x:
         if j > max:
             max = j
-    return [max, min] 
+    return [max, min]
+
+
+def mean(x):
+    l = 0
+    d = 0
+    while (l < len(x)):
+        d = d + int(x[l])
+        l += 1
+    return d / len(x)
