@@ -21,3 +21,14 @@ def smallest(x):
        if i < min:
         min = i
     return min
+
+def largest_smallest(x):
+    min = x[0]
+    max = x[0]
+    for i in x:
+        if i < min:
+           min = i
+    for j in x:
+        if j > max:
+            max = j
+    return [max, min] 
