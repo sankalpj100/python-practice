@@ -41,3 +41,10 @@ def mean(x):
         d = d + int(x[l])
         l += 1
     return d / len(x)
+
+def median(x):
+    x.sort()
+    if len(x) % 2 == 0:
+        return ((x[int(len(x)/2)] + x[int((len(x)/2) - 1)]) / 2)
+    else:
+        return x[int((len(x) - 1) / 2)]
