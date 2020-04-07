@@ -8,3 +8,9 @@ def count_words(x):
     words = len(sentence_list)
     return words
 
+def largest(x):
+    max = x[0]
+    for i in x:
+       if i > max:
+           max = i
+    return max
