@@ -111,3 +111,52 @@ def mode(s):
             break
 
     return  freqdict[max(freqdict.keys())]
+
+def den(x):
+    a = 0
+    while x >= 2000:
+        x -= 2000
+        a += 1
+        print(f"2000 x {a} = {2000 * a} ({x} left)")
+    a = 0
+    while x >= 500:
+        x -= 500
+        a += 1
+        print(f"500 x {a} = {500 * a} ({x} left)")
+    a = 0
+    while x >= 200:
+        x -= 200
+        a += 1
+        print(f"200 x {a} = {200 * a} ({x} left)")
+    a = 0
+    while x >= 100:
+        x -= 100
+        a += 1
+        print(f"100 x {a} = {100 * a} ({x} left)")
+    a = 0
+    while x >= 50:
+        x -= 0
+        a += 1
+        print(f"50 x {a} = {50 * a} ({x} left)")
+    a = 0
+    while x >= 20:
+        x -= 20
+        a += 1
+        print(f"20 x {a} = {20 * a} ({x} left)")
+    a = 0
+    while x >= 10:
+        x -= 10
+        a += 1
+        print(f"10 x {a} = {10 * a} ({x} left)")
+    a = 0
+    while x >= 5:
+        x -= 5
+        a += 1
+        print(f"5 x {a} = {5 * a} ({x} left)")
+    a = 0
+    while x >= 1:
+        x -= 1
+        a += 1
+        print(f"1 x {a} = {1 * a} ({x} left)")
+    
+    return
