@@ -79,3 +79,20 @@ def panagram(x):
         return False
     else:
         return True
+
+    def freq(s):
+    a = list(s)
+    a.sort()
+    inwords = (set(a))
+    new = []
+    for word in inwords:
+        counts = s.count(word)
+        new.append(counts)
+    freqdict = {}
+    for key in inwords:
+        for value in new:
+            freqdict[key] = value
+            new.remove(value)
+            break
+
+    return freqdict
