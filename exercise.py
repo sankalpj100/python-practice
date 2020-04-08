@@ -48,3 +48,11 @@ def median(x):
         return ((x[int(len(x)/2)] + x[int((len(x)/2) - 1)]) / 2)
     else:
         return x[int((len(x) - 1) / 2)]
+
+def tables(x, y):
+    i = 1
+    while  i <= int(y):
+        k = int(x) * int(i)
+        a = print(f"{x} x {i}= {k}")
+        i += 1
+       
