@@ -55,4 +55,16 @@ def tables(x, y):
         k = int(x) * int(i)
         a = print(f"{x} x {i}= {k}")
         i += 1
+
+def tables2(x):
+       b = 1
+       while b <= x:
+              for a in range(1,int(x + 1)):
+                     print(a * b, end="\t ")
+              print('\n')
+              if b == 1:
+                     print("--+-","-" * 8 * (int(x - 1)))
+              print('\n')
+              b += 1
+       return
        
