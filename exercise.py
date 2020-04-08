@@ -96,3 +96,18 @@ def panagram(x):
             break
 
     return freqdict
+
+def mode(s):
+    inwords = (set(s))
+    new = []
+    for word in inwords:
+        counts = s.count(word)
+        new.append(counts)
+    freqdict = {}
+    for key in new:
+        for value in inwords:
+            freqdict[key] = value
+            inwords.remove(value)
+            break
+
+    return  freqdict[max(freqdict.keys())]
