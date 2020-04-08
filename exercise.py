@@ -68,3 +68,14 @@ def tables2(x):
               b += 1
        return
        
+def panagram(x):
+    x =  x.replace(" ", "")
+    a = list(x)
+    b = list(set(a))
+    b.sort()
+    c = "abcdefghijklmnopqrstuvwxyz"
+    d = list(c)
+    if b != d:
+        return False
+    else:
+        return True
